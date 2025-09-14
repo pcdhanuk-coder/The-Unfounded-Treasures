@@ -1,0 +1,104 @@
+[
+  {
+    "id": "sanchi-stupa",
+    "title": "Sanchi Stupa",
+    "short": "Historic Buddhist stupa near Bhopal.",
+    "long": "Sanchi Stupa is one of the oldest stone structures in India and an important monument of Buddhist architecture...",
+    "category": "Historical",
+    "badge": "Heritage",
+    "rating": 4.5,
+    "images": [
+      "https://www.tourmyindia.com/blog//wp-content/uploads/2021/10/Best-Places-to-Visit-in-Bhopal-MP-Sanchi-Stupa.jpg",
+      "https://www.mptourism.com/images/point-of-interest/Vyankat%20Bhawan.webp",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/1d/24/96/the-marvellous-orchha.jpg?w=1400&h=800&s=1",
+      "https://www.alightindia.com/cdn/uploads/postimages/ORIGINAL/temples-in-madhya-pradesh--b860f9.jpg",
+      "https://media2.thrillophilia.com/images/photos/000/129/692/original/1530945758_maxresdefault_live.jpg?w=753&h=450&dpr=1.5"
+    ],
+    "map": "https://www.google.com/maps?q=Sanchi&output=embed"
+  },
+  {
+    "id": "dhuandhar-falls",
+    "title": "Dhuandhar Falls",
+    "short": "Powerful waterfall on the Narmada river.",
+    "long": "Dhuandhar Falls is located in Jabalpur and famous for breathtaking cascades and boat rides near the gorge...",
+    "category": "Beaches",
+    "badge": "Adventure",
+    "rating": 4.7,
+    "images": [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/b4/bd/56/view-of-the-waterfall.jpg?w=1400&h=800&s=1",
+      "https://www.mptourism.com/images/point-of-interest/Vyankat%20Bhawan.webp",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/1d/24/96/the-marvellous-orchha.jpg?w=1400&h=800&s=1",
+      "https://www.alightindia.com/cdn/uploads/postimages/ORIGINAL/temples-in-madhya-pradesh--b860f9.jpg",
+      "https://media2.thrillophilia.com/images/photos/000/129/692/original/1530945758_maxresdefault_live.jpg?w=753&h=450&dpr=1.5"
+    ],
+    "map": "https://www.google.com/maps?q=Dhuandhar+Falls&output=embed"
+  },
+  {
+    "id": "khajuraho-temples",
+    "title": "Khajuraho Temples",
+    "short": "Famous for carved sculptures and UNESCO heritage.",
+    "long": "The Khajuraho Group of Monuments is a UNESCO World Heritage Site known for its stunning temples...",
+    "category": "Historical",
+    "badge": "Cultural",
+    "rating": 4.6,
+    "images": [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/1d/24/a5/visit-famous-khajuraho.jpg?w=1400&h=800&s=1",
+      "https://www.mptourism.com/images/point-of-interest/Vyankat%20Bhawan.webp",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/1d/24/96/the-marvellous-orchha.jpg?w=1400&h=800&s=1",
+      "https://www.alightindia.com/cdn/uploads/postimages/ORIGINAL/temples-in-madhya-pradesh--b860f9.jpg",
+      "https://media2.thrillophilia.com/images/photos/000/129/692/original/1530945758_maxresdefault_live.jpg?w=753&h=450&dpr=1.5"
+    ],
+    "map": "https://www.google.com/maps?q=Khajuraho&output=embed"
+  },
+  {
+    "id": "jain-mandir",
+    "title": "Jain Mandir",
+    "short": "Peaceful spiritual spot with intricate carvings.",
+    "long": "A tranquil Mandir famous for its architecture and serene atmosphere...",
+    "category": "Historical",
+    "badge": "Spiritual",
+    "rating": 4.4,
+    "images": [
+      "https://thumbs.dreamstime.com/b/muktagiri-jain-temple-muktagiri-jain-pilgrimage-centre-madhya-pradesh-india-muktagiri-jain-temple-187931119.jpg",
+      "https://www.mptourism.com/images/point-of-interest/Vyankat%20Bhawan.webp",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/1d/24/96/the-marvellous-orchha.jpg?w=1400&h=800&s=1",
+      "https://www.alightindia.com/cdn/uploads/postimages/ORIGINAL/temples-in-madhya-pradesh--b860f9.jpg",
+      "https://media2.thrillophilia.com/images/photos/000/129/692/original/1530945758_maxresdefault_live.jpg?w=753&h=450&dpr=1.5"
+    ],
+    "map": "https://www.google.com/maps?q=Jain+Temple&output=embed"
+  },
+  {
+    "id": "venkat-bhavan",
+    "title": "Venkat Bhavan",
+    "short": "Heritage building with cultural events.",
+    "long": "Venkat Bhavan hosts local cultural events and is known for its colonial architecture...",
+    "category": "Cities",
+    "badge": "Luxury",
+    "rating": 4.2,
+    "images": [
+      "https://www.mptourism.com/images/point-of-interest/Vyankat%20Bhawan.webp",
+      "https://www.mptourism.com/images/point-of-interest/Vyankat%20Bhawan.webp",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/1d/24/96/the-marvellous-orchha.jpg?w=1400&h=800&s=1",
+      "https://www.alightindia.com/cdn/uploads/postimages/ORIGINAL/temples-in-madhya-pradesh--b860f9.jpg",
+      "https://media2.thrillophilia.com/images/photos/000/129/692/original/1530945758_maxresdefault_live.jpg?w=753&h=450&dpr=1.5"
+    ],
+    "map": "https://www.google.com/maps?q=Venkat+Bhavan&output=embed"
+  },
+  {
+    "id": "orchha-fort",
+    "title": "Orchha Fort",
+    "short": "Majestic fort with riverside views.",
+    "long": "Orchha Fort is a historical complex with palaces and temples overlooking the Betwa River...",
+    "category": "Beaches",
+    "badge": "Heritage",
+    "rating": 4.5,
+    "images": [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/1d/24/96/the-marvellous-orchha.jpg?w=1400&h=800&s=1",
+      "https://www.mptourism.com/images/point-of-interest/Vyankat%20Bhawan.webp",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/1d/24/96/the-marvellous-orchha.jpg?w=1400&h=800&s=1",
+      "https://www.alightindia.com/cdn/uploads/postimages/ORIGINAL/temples-in-madhya-pradesh--b860f9.jpg",
+      "https://media2.thrillophilia.com/images/photos/000/129/692/original/1530945758_maxresdefault_live.jpg?w=753&h=450&dpr=1.5"
+    ],
+    "map": "https://www.google.com/maps?q=Orchha+Fort&output=embed"
+  }
+]

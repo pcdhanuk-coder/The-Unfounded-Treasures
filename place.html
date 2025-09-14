@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Place Details</title>
+    <link rel="stylesheet" href="place.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- Header code yahan -->
+    </header>
+
+    <main class="container" id="placeContent"></main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <script>
+        async function loadPlace() {
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('id');
+            const container = document.getElementById('placeContent');
+
+            if (!id) {
+                container.innerHTML = '<p>Invalid place.</p>';
+                return;
+            }
+
+            try {
+                const res = await fetch('./places.json');
+                const places = await res.json();
+                const place = places.find(p => p.id === id);
+                if (!place) {
+                    container.innerHTML = '<p>Place not found.</p>';
+                    return;
+                }
+
+                container.innerHTML = `
+          <div class="place-hero" style="background-image:url('${place.images[0]}')">
+            <div class="overlay">
+              <h1>${place.title}</h1>
+              <div class="rating">${renderStars(place.rating)}</div>
+            </div>
+          </div>
+
+          <div class="place-layout">
+            <section>
+              <h2>About</h2>
+              <p>${place.long}</p>
+
+              <h3>Gallery</h3>
+              <div class="gallery">
+                ${place.images.map(img => `
+                  <img src="${img}" 
+                       alt="${place.title}" 
+                       class="gallery-img"
+                       loading="lazy"
+                       style="width:100%; height:120px; object-fit:cover; border-radius:8px; cursor:pointer;">
+                `).join('')}
+              </div>
+
+            </section>
+
+            <aside>
+              <div class="details-box">
+                <h3>Details</h3>
+                <p><strong>Category:</strong> ${place.category}</p>
+                <p><strong>Badge:</strong> ${place.badge}</p>
+                <a href="index.html" class="btn">← Back to list</a>
+              </div>
+
+              <iframe src="${place.map}" loading="lazy"></iframe>
+            </aside>
+          </div>
+        `;
+
+                initLightbox(place.images);  // ✅ Init lightbox after DOM is populated
+
+            } catch (err) {
+                console.error(err);
+                container.innerHTML = '<p>Could not load place details.</p>';
+            }
+
+            function renderStars(rating) {
+                let out = '';
+                const full = Math.floor(rating);
+                const half = (rating - full) >= 0.5;
+                for (let i = 0; i < full; i++) out += '<i class="fas fa-star"></i>';
+                if (half) out += '<i class="fas fa-star-half-alt"></i>';
+                const empty = 5 - full - (half ? 1 : 0);
+                for (let i = 0; i < empty; i++) out += '<i class="far fa-star"></i>';
+                return out;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadPlace);
+
+        function initLightbox(images) {
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+            const close = document.querySelector(".lightbox .close");
+            const prev = document.querySelector(".lightbox .prev");
+            const next = document.querySelector(".lightbox .next");
+
+            let currentIndex = 0;
+
+            function showImage(index) {
+                currentIndex = index;
+                lightbox.style.display = "block";
+                lightboxImg.src = images[index];
+            }
+
+            document.querySelectorAll(".gallery-img").forEach((img, i) => {
+                img.addEventListener("click", () => showImage(i));
+            });
+
+            close.onclick = () => (lightbox.style.display = "none");
+            prev.onclick = () => showImage((currentIndex - 1 + images.length) % images.length);
+            next.onclick = () => showImage((currentIndex + 1) % images.length);
+
+            document.addEventListener("keydown", (e) => {
+                if (lightbox.style.display === "block") {
+                    if (e.key === "ArrowLeft") prev.onclick();
+                    if (e.key === "ArrowRight") next.onclick();
+                    if (e.key === "Escape") close.onclick();
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
