@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avaloria - Discover Beautiful Destinations</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <div class="container header-container">
             <a href="#" class="logo"><i class="fas fa-globe-americas"></i> Avaloria</a>
-            
+
             <button class="menu-toggle" id="menuToggle">
                 <i class="fas fa-bars"></i>
             </button>
-            
+
             <nav>
                 <ul id="navMenu">
                     <li><a href="#">Home</a></li>
@@ -29,7 +32,7 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            
+
             <div class="nav-btns">
                 <a href="#" class="btn btn-outline">Sign In</a>
                 <a href="#" class="btn">Sign Up</a>
@@ -41,12 +44,13 @@
     <section class="hero">
         <div class="container hero-content">
             <h2>Discover The Beautiful World</h2>
-            <p>Explore the most beautiful places around the world with our curated travel experiences. Adventure awaits, what are you waiting for?</p>
+            <p>Explore the most beautiful places around the world with our curated travel experiences. Adventure awaits,
+                what are you waiting for?</p>
             <div class="hero-btns">
                 <a href="#" class="btn">Explore Now</a>
-                <a href="#" class="btn btn-outline">Watch Video <i class="fas fa-play-circle"></i></a>
+                <a href="#" id="watch-btn" class="btn btn-outline ">Watch Video <i class="fas fa-play-circle"></i></a>
             </div>
-            
+
             <div class="search-box">
                 <input type="text" placeholder="Search for destinations, activities...">
                 <button>Search</button>
@@ -61,7 +65,7 @@
                 <h2>Popular Destinations</h2>
                 <p>Discover the most beautiful places in the world</p>
             </div>
-            
+
             <div class="places-filter">
                 <button class="filter-btn active">All</button>
                 <button class="filter-btn">Beaches</button>
@@ -69,19 +73,20 @@
                 <button class="filter-btn">Cities</button>
                 <button class="filter-btn">Historical</button>
             </div>
-            
+
             <div class="places-grid">
                 <!-- Card 1 -->
                 <div class="card">
                     <div class="card-img">
-                        <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/10/Best-Places-to-Visit-in-Bhopal-MP-Sanchi-Stupa.jpg" alt="Swiss Alps">
+                        <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/10/Best-Places-to-Visit-in-Bhopal-MP-Sanchi-Stupa.jpg"
+                            alt="Swiss Alps">
                         <div class="card-badge">Adventure</div>
                     </div>
                     <div class="card-content">
                         <h3>Sanchi Stupa</h3>
                         <p>Experience the breathtaking beauty of the Swiss Alps with our guided tours.</p>
                         <div class="card-meta">
-                            
+
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -92,18 +97,19 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Card 2 -->
                 <div class="card">
                     <div class="card-img">
-                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/b4/bd/56/view-of-the-waterfall.jpg?w=1400&h=800&s=1" alt="Santorini">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/b4/bd/56/view-of-the-waterfall.jpg?w=1400&h=800&s=1"
+                            alt="Santorini">
                         <div class="card-badge">Luxury</div>
                     </div>
                     <div class="card-content">
                         <h3>Dhuandhar Falls</h3>
                         <p>Enjoy the stunning views and beautiful sunsets of this Greek island paradise.</p>
                         <div class="card-meta">
-                            
+
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -117,14 +123,15 @@
                 <!-- Card 3 -->
                 <div class="card">
                     <div class="card-img">
-                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/1d/24/a5/visit-famous-khajuraho.jpg?w=1400&h=800&s=1" alt="Santorini">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/1d/24/a5/visit-famous-khajuraho.jpg?w=1400&h=800&s=1"
+                            alt="Santorini">
                         <div class="card-badge">Luxury</div>
                     </div>
                     <div class="card-content">
                         <h3>Khajuraho Temples</h3>
                         <p>Enjoy the stunning views and beautiful sunsets of this Greek island paradise.</p>
                         <div class="card-meta">
-                            
+
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -138,14 +145,15 @@
                 <!-- Card 4 -->
                 <div class="card">
                     <div class="card-img">
-                        <img src="https://th.bing.com/th/id/OIP.81-SwAnK1FNm93f1wn5p_gHaFW?w=242&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Santorini">
+                        <img src="https://th.bing.com/th/id/OIP.81-SwAnK1FNm93f1wn5p_gHaFW?w=242&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                            alt="Santorini">
                         <div class="card-badge">Luxury</div>
                     </div>
                     <div class="card-content">
                         <h3>Jain Mandir</h3>
                         <p>Enjoy the stunning views and beautiful sunsets of this Greek island paradise.</p>
                         <div class="card-meta">
-                            
+
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -159,14 +167,15 @@
                 <!-- Card 2 -->
                 <div class="card">
                     <div class="card-img">
-                        <img src="https://www.mptourism.com/images/point-of-interest/Vyankat%20Bhawan.webp" alt="Santorini">
+                        <img src="https://www.mptourism.com/images/point-of-interest/Vyankat%20Bhawan.webp"
+                            alt="Santorini">
                         <div class="card-badge">Luxury</div>
                     </div>
                     <div class="card-content">
                         <h3>Venkat Bhavan</h3>
                         <p>Enjoy the stunning views and beautiful sunsets of this Greek island paradise.</p>
                         <div class="card-meta">
-                            
+
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -177,18 +186,19 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Card 3 -->
                 <div class="card">
                     <div class="card-img">
-                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/1d/24/96/the-marvellous-orchha.jpg?w=1400&h=800&s=1" alt="Bali">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/1d/24/96/the-marvellous-orchha.jpg?w=1400&h=800&s=1"
+                            alt="Bali">
                         <div class="card-badge">Beach</div>
                     </div>
                     <div class="card-content">
                         <h3>Orchha Fort</h3>
                         <p>Relax on pristine beaches and immerse yourself in the rich Balinese culture.</p>
                         <div class="card-meta">
-                            
+
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -210,20 +220,20 @@
                 <h2>Why Choose Us</h2>
                 <p>We offer the best experience for our customers</p>
             </div>
-            
+
             <div class="features-grid">
                 <div class="feature-box">
                     <i class="fas fa-map-marked-alt"></i>
                     <h3>Best Destinations</h3>
                     <p>We carefully select the most breathtaking destinations around the world.</p>
                 </div>
-                
+
                 <div class="feature-box">
                     <i class="fas fa-tags"></i>
                     <h3>Best Prices</h3>
                     <p>Get the best value for your money with our competitive pricing.</p>
                 </div>
-                
+
                 <div class="feature-box">
                     <i class="fas fa-user-shield"></i>
                     <h3>Travel Safety</h3>
@@ -240,11 +250,12 @@
                 <h2>What Our Travelers Say</h2>
                 <p>Authentic experiences from our community</p>
             </div>
-            
+
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        <p>"The Swiss Alps tour was absolutely incredible. The guides were knowledgeable and the scenery was breathtaking. Will definitely book again!"</p>
+                        <p>"The Swiss Alps tour was absolutely incredible. The guides were knowledgeable and the scenery
+                            was breathtaking. Will definitely book again!"</p>
                     </div>
                     <div class="testimonial-author">
                         <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah Johnson">
@@ -254,10 +265,11 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        <p>"Our honeymoon in Santorini was magical thanks to Avaloria. Every detail was taken care of, and the views were even better than promised."</p>
+                        <p>"Our honeymoon in Santorini was magical thanks to Avaloria. Every detail was taken care of,
+                            and the views were even better than promised."</p>
                     </div>
                     <div class="testimonial-author">
                         <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
@@ -267,10 +279,11 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        <p>"Bali was a dream come true! The cultural experiences and beautiful beaches made for the perfect vacation. Can't wait to explore more with Avaloria."</p>
+                        <p>"Bali was a dream come true! The cultural experiences and beautiful beaches made for the
+                            perfect vacation. Can't wait to explore more with Avaloria."</p>
                     </div>
                     <div class="testimonial-author">
                         <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jessica Williams">
@@ -289,14 +302,24 @@
         <div class="container newsletter-content">
             <h2>Subscribe to Our Newsletter</h2>
             <p>Get the latest travel deals, tips, and exclusive offers straight to your inbox.</p>
-            
+
             <form class="newsletter-form">
                 <input type="email" placeholder="Enter your email address">
                 <button>Subscribe</button>
             </form>
         </div>
+        <!-- Hidden Video Section -->
+        <!-- Hidden Video Section -->
+        <div class="video" id="videoPopup">
+            <div class="video-container">
+                <span id="closeBtn" class="close-btn">&times;</span>
+                <iframe id="ytPlayer" width="560" height="315" src="https://www.youtube.com/embed/YR4h_SiIWHs?si=napThfJ4lHtNthPP"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
         <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/YR4h_SiIWHs?si=napThfJ4lHtNthPP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
         </div>
     </section>
 
@@ -306,7 +329,8 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <h3>Avaloria</h3>
-                    <p>Discover the world with our curated travel experiences. Adventure awaits, what are you waiting for?</p>
+                    <p>Discover the world with our curated travel experiences. Adventure awaits, what are you waiting
+                        for?</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -314,7 +338,7 @@
                         <a href="#"><i class="fab fa-pinterest"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Destinations</h3>
                     <ul>
@@ -325,7 +349,7 @@
                         <li><a href="#">Africa</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Quick Links</h3>
                     <ul>
@@ -336,7 +360,7 @@
                         <li><a href="#">Terms & Conditions</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Contact Info</h3>
                     <ul>
@@ -346,7 +370,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="copyright">
                 <p>&copy; 2025 Avaloria. All rights reserved.</p>
             </div>
@@ -354,4 +378,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
