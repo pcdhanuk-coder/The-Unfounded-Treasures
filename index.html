@@ -33,10 +33,14 @@
                 </ul>
             </nav>
 
-            <div class="nav-btns">
-                <a href="#" class="btn btn-outline">Sign In</a>
-                <a href="#" class="btn">Sign Up</a>
+            <div class="nav-btns" id="authLinks">
+                <a href="auth.html" class="btn btn-outline">Sign In</a>
+                <a href="auth.html" class="btn">Sign Up</a>
             </div>
+
+            <button id="signOutBtn" class="btn btn-outline" style="display: none;">Sign Out</button>
+
+
         </div>
     </header>
 
@@ -60,15 +64,37 @@
 
     <!-- Places Section -->
     <section class="places">
-        <div class="container">
-            <!-- inside Places Section -->
-            <div class="places-grid" id="placesGrid">
-                <!-- JS will render cards here -->
-            </div>
+        <div class="section-title">
+            <h2>Popular Destinations</h2>
+            <p>Discover the most beautiful places in the world</p>
         </div>
+        <!-- Filter of Places by Type -->
+        <div class="places-filter container">
+            <button class="filter-btn active" data-category="All">All</button>
+            <button class="filter-btn" data-category="Historical">Historical</button>
+            <button class="filter-btn" data-category="Adventure">Adventure</button>
+            <button class="filter-btn" data-category="Beaches">Beaches</button>
+            <button class="filter-btn" data-category="Cities">Cities</button>
+        </div>
+
+        <div class="places-grid container" id="placesGrid">
+            <!-- JS will render cards here -->
+        </div>
+        <section class="hidden-places">
+    <div class="container section-title">
+        <h2>Hidden Gems of Madhya Pradesh</h2>
+        <p>Discover secret and less explored places in Madhya Pradesh</p>
+    </div>
+
+    <div class="container places-grid">
+       
+    </div>
+</section>
+
     </section>
 
-
+    
+    <!-- District Filter Comming Soon -->
 
 
     <!-- Features Section -->
@@ -167,18 +193,14 @@
             </form>
         </div>
         <!-- Hidden Video Section -->
-        <!-- Hidden Video Section -->
-        <div class="video" id="videoPopup">
+        <div class="video" id="videoPopup" style="display:none;">
             <div class="video-container">
                 <span id="closeBtn" class="close-btn">&times;</span>
                 <iframe id="ytPlayer" width="560" height="315"
-                    src="https://www.youtube.com/embed/YR4h_SiIWHs?si=napThfJ4lHtNthPP" frameborder="0"
-                    allow="autoplay; encrypted-media" allowfullscreen>
+                    src="https://www.youtube.com/embed/YR4h_SiIWHs"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                 </iframe>
             </div>
-        </div>
-        <div class="video">
-
         </div>
     </section>
 
@@ -235,6 +257,7 @@
             </div>
         </div>
     </footer>
+    <script type="module" src="index-auth.js"></script>
     <script src="script.js"></script>
 </body>
 
