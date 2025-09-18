@@ -177,6 +177,8 @@ nav ul li a:hover {
     background: none;
     border: none;
     cursor: pointer;
+    position: relative;
+    
 }
 
 /* Hero Section */
@@ -651,6 +653,80 @@ footer {
 .card { position: relative; } /* for wish button position */
 
 
+/* Wishlist Button */
+.wish-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;  /* left se change karke right kiya */
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.95);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--secondary);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease, background 0.3s ease, color 0.3s ease;
+  z-index: 5;
+}
+
+.wish-btn:hover {
+  transform: scale(1.15);
+  background: var(--secondary);
+  color: #fff;
+}
+
+.wish-btn.wished {
+  background: var(--secondary);
+  color: white;
+  transform: scale(1.1);
+}
+
+.wish-btn.wished:hover {
+  background: #ff5252;
+}
+
+/* Wishlist Button Center */
+.wish-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55px;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: var(--secondary);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  transition: transform 0.25s ease, background 0.3s ease, color 0.3s ease;
+  z-index: 5;
+}
+
+.wish-btn:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+  background: var(--secondary);
+  color: #fff;
+}
+
+.wish-btn.wished {
+  background: var(--secondary);
+  color: white;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.wish-btn.wished:hover {
+  background: #ff5252;
+}
 
 
 
@@ -854,6 +930,9 @@ footer {
 
 
 
+/* -------------- */
+
+
 /* Animations */
 @keyframes fadeIn {
     from {
@@ -976,6 +1055,51 @@ footer {
     .card {
         max-width: 100%;
     }
+}
+
+
+/* ✅ Navbar & Button Mobile Fixes */
+@media (max-width: 768px) {
+  .nav-btns .btn {
+    padding: 6px 14px;   /* smaller button */
+    font-size: 0.85rem;  /* smaller text */
+    margin-left: 8px;
+    border-radius: 30px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .nav-btns .btn {
+    padding: 5px 12px;
+    font-size: 0.75rem;
+  }
+
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
 }
 
 
