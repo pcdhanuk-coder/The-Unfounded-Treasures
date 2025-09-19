@@ -354,7 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <h3>Transportation</h3>
         <p>${place.transportation || 'Information not available'}</p>
         <h3>Best Time to Visit</h3>
-        <p>${place.bestTime || 'All year'}</p>
+        <p>${place.best_Time || 'All year'}</p>
         <h3>Travel Summary</h3>
         <p>${place.summary || ''}</p>
         <h3>Reviews</h3>
@@ -363,8 +363,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <h3>FAQ</h3>
         <div class="faq">
-            ${(place.faq || []).map(f => `<p><strong>Q:</strong> ${f.q} <br><strong>A:</strong> ${f.a}</p>`).join('')}
-        </div>
+          ${(place.faq || []).map(f => `<p><strong>Q:</strong> ${f.question} <br><strong>A:</strong> ${f.answer}</p>`).join('')}
     </section>
     <aside>
         <div class="details-box">
