@@ -1,3 +1,25 @@
+/* Wishlist Button Fix - ensures all cards have consistent button style */
+.wishlist-btn {
+    display: block;
+    width: 100%;
+    margin: 12px 0 0 0;
+    padding: 12px 0;
+    background: #fff;
+    color: #ff6a00;
+    border: 2px solid #ff6a00;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+    text-align: center;
+}
+.wishlist-btn:hover, .wishlist-btn.wished {
+    background: linear-gradient(90deg, #ff6a00 0%, #ffb86b 100%);
+    color: #fff;
+    border-color: #ffb86b;
+}
 /* Reset & Base Styles */
 * {
     margin: 0;
@@ -293,6 +315,9 @@ nav ul li a:hover {
     box-shadow: var(--shadow);
     transition: var(--transition);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .card:hover {
@@ -331,6 +356,14 @@ nav ul li a:hover {
 
 .card-content {
     padding: 20px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+/* Ensure wishlist button always at bottom of card */
+.wishlist-btn {
+    margin-top: auto;
+    margin-bottom: 0;
 }
 
 .card h3 {
